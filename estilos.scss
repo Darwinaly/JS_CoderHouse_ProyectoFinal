@@ -1,0 +1,749 @@
+
+@media (max-width:767px){
+
+    body{
+        height: auto;
+        background-color: rgb(34, 73, 73);
+    }
+
+    .notificacionEnviado{
+        display: none;
+        width: 100%;
+        height: 30px;
+        background-color: rgb(85, 236, 123);
+        margin-block-end: 30px;
+
+
+        img{
+            width: 25px;
+            height: 30px;
+            margin-left: 20px;
+        }
+
+        p{
+            float: left;
+            font-size: 18px;
+            margin-left: 10px;
+            font-weight: 800;
+        }
+    }
+    
+    
+    
+    .main {
+        display: grid;
+        grid-template: "contacto"      
+                        "opcionesInversion"
+                        "aside"
+                        "form" / 
+                        100%;
+    }       
+    
+    .contacto {
+        display: none;
+        background-color: rgb(64, 131, 131);
+        color: white;
+        grid-area: contacto;
+        padding: 2%;
+        text-align: center;
+
+        .btn-close{
+            margin-left: 90%;
+            background-color: rgb(148, 219, 219);
+        }
+
+        h4{
+            font-size: 25px;
+            margin: 3%;
+            font-weight: 700;
+        }
+
+        p {
+            text-align: left;
+            margin: 10px;
+        }
+
+        .card{
+            margin-top: 20px;
+            color: black;
+        }
+
+        .btn {
+            margin: 5%;
+            margin-top: 5%;
+            width: 30%;
+        }
+    }
+    
+    
+       
+    .opcionesInversion {
+        grid-area: opcionesInversion;
+        text-align: center;
+        margin-top: 5%;
+
+        h4{
+            font-size: 25px;
+            margin: 3%;
+            font-weight: 700;
+            text-align: center;
+            color: white;
+            margin-top: auto;
+            opacity: 0;
+        }
+
+        #local{ 
+            width: 80%;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        #internacional{ 
+            width: 80%;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .btn{
+            width: 90%;
+            height: 40px;
+            margin-top: 5%;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+
+
+    }
+
+    .form {
+        grid-area: form;
+        margin-top: 5%;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5%;
+
+        label{
+            font-size: 18px;
+        }
+
+        .btn{
+            font-size: 18px;
+            width: 30%;
+        }
+
+        #alertaTasaInteres {
+            display: none;
+            color: rgb(3, 3, 3);
+            background-color: rgb(255, 241, 49);
+            font-weight: 600;
+            font-size: 13px;
+            text-align: left;
+        }
+        #alertaInputInversion {
+            display: none;
+            color: rgb(3, 3, 3);
+            background-color: rgb(255, 241, 49);
+            font-weight: 600;
+            font-size: 13px;
+            text-align: left;
+        }
+        #alertaInputPlazo {
+            display: none;
+            color: rgb(3, 3, 3);
+            background-color: rgb(255, 241, 49);
+            font-weight: 600;
+            font-size: 13px;
+            text-align: left;
+        }
+    }
+
+    .aside {
+        display: none;
+        grid-area: aside;
+        text-align: center;
+        margin-top: 7%;
+        .btn{
+            font-size: 18px;
+            width: 50%;
+        }
+
+        .card {
+            margin-top: 15%;
+            height: auto;
+            margin:auto;
+            card-body{
+                height: auto;
+            }
+            h5{
+                font-size: 20px;
+                font-weight: 800;
+            }
+            p{
+                font-size: 18px;
+                margin: 0px;
+            }
+            
+        }
+
+    }
+    
+
+    footer{
+        background-color: white;
+        height: auto;
+    }
+
+    #alertaNombre {
+        display: none;
+        color: rgb(3, 3, 3);
+        background-color: rgb(255, 241, 49);
+        font-weight: 600;
+        font-size: 13px;
+        text-align: left;
+    }
+    #alertaCorreo {
+        display: none;
+        color: rgb(3, 3, 3);
+        background-color: rgb(255, 241, 49);
+        font-weight: 600;
+        font-size: 13px;
+        text-align: left;
+    }
+    #alertaTelefono {
+        display: none;
+        color: rgb(3, 3, 3);
+        background-color: rgb(255, 241, 49);
+        font-weight: 600;
+        font-size: 13px;
+        text-align: left;
+    }
+    
+}
+
+
+
+@media (min-width:768px) and (max-width:1000px){
+
+
+    body{
+        height: auto;
+        background-color: rgb(34, 73, 73);
+    }
+    
+
+    .notificacionEnviado{
+        display: none;
+        width: 100%;
+        height: 30px;
+        background-color: rgb(85, 236, 123);
+        margin-block-end: 30px;
+
+
+        img{
+            width: 25px;
+            height: 30px;
+            margin-left: 20px;
+        }
+
+        p{
+            float: left;
+            font-size: 18px;
+            margin-left: 10px;
+            font-weight: 800;
+        }
+    }
+    
+    
+    .main {
+        display: grid;
+        grid-template: "contacto  contacto"      
+                        " opcionesInversion opcionesInversion"
+                        "form aside"/ 
+                         50% auto;
+    }       
+    
+    .contacto {
+        display: none;
+        background-color: rgb(64, 131, 131);
+        color: white;
+        grid-area: contacto;
+        padding: 2%;
+        text-align: center;
+
+        .btn-close{
+            margin-left: 90%;
+            background-color: rgb(148, 219, 219);
+        }
+
+        h4{
+            font-size: 25px;
+            margin: 3%;
+            font-weight: 700;
+        }
+
+        p {
+            text-align: left;
+            margin: 10px;
+        }
+
+        .card{
+            margin-top: 20px;
+            color: black;
+        }
+
+        .btn {
+            margin: 5%;
+            margin-top: 5%;
+            width: 30%;
+        }
+    }
+    
+    
+       
+    .opcionesInversion {
+        display: grid;
+        grid-template:  "opcionesTitulo opcionesTitulo"
+                        "botoneraUno botoneraDos"/
+                            50%        50%
+        ;
+
+        grid-area: opcionesInversion;
+        text-align: center;
+        margin-top: 5%;
+
+
+        .opcionesTitulo{
+            grid-area: opcionesTitulo;
+        
+
+            h4{
+                font-size: 25px;
+                margin-left: 5%;
+                padding-block-end: 3%;
+                font-weight: 700;
+                text-align: left;
+                color: white;
+                opacity: 0;
+            }
+    
+        }
+
+        .botoneraUno{
+            grid-area: botoneraUno;
+
+            .btn{ 
+                width: 80%;
+                height: 40%;
+                margin-top: 3%;
+                font-size: 20px;
+            }
+        }
+
+
+        .botoneraDos{
+            grid-area: botoneraDos;
+
+            .btn{
+                width: 90%;
+                height: 30%;
+                margin-top: 1%;
+                font-size: 18px;
+                font-weight: 600;
+            }    
+        }
+    }
+
+    .form {
+        grid-area: form;
+        margin: 5%;
+        margin-top: 10%;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5%;
+
+        label{
+            font-size: 18px;
+        }
+
+        .btn{
+            font-size: 18px;
+            width: 40%;
+        }
+
+        #alertaTasaInteres {
+            display: none;
+            color: rgb(3, 3, 3);
+            background-color: rgb(255, 241, 49);
+            font-weight: 600;
+            font-size: 13px;
+            text-align: left;
+        }
+        #alertaInputInversion {
+            display: none;
+            color: rgb(3, 3, 3);
+            background-color: rgb(255, 241, 49);
+            font-weight: 600;
+            font-size: 13px;
+            text-align: left;
+        }
+        #alertaInputPlazo {
+            display: none;
+            color: rgb(3, 3, 3);
+            background-color: rgb(255, 241, 49);
+            font-weight: 600;
+            font-size: 13px;
+            text-align: left;
+        }
+    }
+
+    .aside {
+        //display: none;
+        grid-area: aside;
+        text-align: center;
+        margin-top: 10%;
+        .btn{
+            font-size: 18px;
+            width: 50%;
+        }
+
+        .card {
+            margin-top: 15%;
+            height: 80%;
+            margin:auto;
+            card-body{
+                height: 100%;
+            }
+            h5{
+                font-size: 20px;
+                font-weight: 800;
+            }
+            p{
+                font-size: 18px;
+                margin: 0px;
+            }
+            
+        }
+
+    }
+    
+
+    footer{
+        background-color: white;
+        height: auto;
+    }
+
+    #alertaNombre {
+        display: none;
+        color: rgb(3, 3, 3);
+        background-color: rgb(255, 241, 49);
+        font-weight: 600;
+        font-size: 13px;
+        text-align: left;
+    }
+    #alertaCorreo {
+        display: none;
+        color: rgb(3, 3, 3);
+        background-color: rgb(255, 241, 49);
+        font-weight: 600;
+        font-size: 13px;
+        text-align: left;
+    }
+    #alertaTelefono {
+        display: none;
+        color: rgb(3, 3, 3);
+        background-color: rgb(255, 241, 49);
+        font-weight: 600;
+        font-size: 13px;
+        text-align: left;
+    }
+
+}
+
+@media (min-width:1001px){
+
+
+    body{
+        height: auto;
+        background-color: rgb(34, 73, 73);
+    }
+    
+
+    
+    
+    .main {
+        display: grid;
+        grid-template: "contacto  contacto  contacto"      
+                        " opcionesInversion opcionesInversion form"
+                        "aside aside aside"/ 
+                         33% 33% auto;
+    }       
+    
+    .notificacionEnviado{
+        display: none;
+        width: 100%;
+        height: 30px;
+        background-color: rgb(85, 236, 123);
+        margin-block-end: 30px;
+
+
+        img{
+            width: 25px;
+            height: 30px;
+            margin-left: 20px;
+        }
+
+        p{
+            float: left;
+            font-size: 18px;
+            margin-left: 10px;
+            font-weight: 800;
+        }
+    }
+
+
+    .contacto {
+        display: none;
+        background-color: rgb(64, 131, 131);
+        color: white;
+        grid-area: contacto;
+        padding: 1%;
+        text-align: center;
+
+        .contactobutonClose{
+            grid-area: contactobutonClose;
+
+            .btn-close{
+                margin-left: 90%;
+                background-color: rgb(148, 219, 219);
+            }
+        }
+
+        .contactoFormulario{
+            grid-area: contactoFormulario;
+            width: 50%;
+            margin-left: 25%;
+
+            h4{
+                font-size: 30px;
+                margin: 3%;
+                font-weight: 700;
+            }
+    
+            p {
+                text-align: left;
+                margin: 10px;
+                font-size: 18px;
+                font-weight: 600;
+            }
+    
+            .card{
+                margin-top: 20px;
+                color: black;
+            }
+
+
+        }
+
+        .contactoBotones{
+            grid-area: contactoBotones;
+
+            .btn {
+                margin: 5%;
+                margin-top: 5%;
+                width: 200px;
+            }
+        }
+        
+    }
+    
+    
+       
+    .opcionesInversion {
+        display: grid;
+        grid-template:  "opcionesTitulo opcionesTitulo" 100px
+                        "botoneraUno botoneraDos"/
+                            50%        50%
+        ;
+
+        grid-area: opcionesInversion;
+        text-align: center;
+        margin-top: 0;
+        
+
+
+        .opcionesTitulo{
+            grid-area: opcionesTitulo;
+            
+
+            h4{
+                font-size: 35px;
+                margin-left: 5%;
+                padding-block-end: 3%;
+                font-weight: 700;
+                text-align: left;
+                color: white;
+                opacity: 0;
+            }
+    
+        }
+
+        .botoneraUno{
+            grid-area: botoneraUno;
+            
+
+            .btn{ 
+                width: 42%;
+                height: 40%;
+                margin: 3%;
+                margin-top: 10%;
+                font-size: 20px;
+            }
+        }
+
+
+        .botoneraDos{
+            grid-area: botoneraDos;
+
+            .btn{
+                width: 80%;
+                height: 20%;
+                margin-top: 2%;
+                font-size: 18px;
+                font-weight: 600;
+            }    
+        }
+    }
+
+    .form {
+        grid-area: form;
+        margin: 5%;
+        margin-top: 5%;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5%;
+
+        label{
+            font-size: 18px;
+        }
+
+        .btn{
+            font-size: 18px;
+            width: 40%;
+        }
+
+        #alertaTasaInteres {
+            display: none;
+            color: rgb(3, 3, 3);
+            background-color: rgb(255, 241, 49);
+            font-weight: 600;
+            font-size: 13px;
+            text-align: left;
+        }
+        #alertaInputInversion {
+            display: none;
+            color: rgb(3, 3, 3);
+            background-color: rgb(255, 241, 49);
+            font-weight: 600;
+            font-size: 13px;
+            text-align: left;
+        }
+        #alertaInputPlazo {
+            display: none;
+            color: rgb(3, 3, 3);
+            background-color: rgb(255, 241, 49);
+            font-weight: 600;
+            font-size: 13px;
+            text-align: left;
+        }
+    }
+
+    .aside {
+        display: grid;
+        grid-template: "cardTarjetaResultados cardBotonContactar" /
+                                66% auto
+        ;
+
+
+        grid-area: aside;
+        text-align: center;
+        margin-top: 0;
+
+
+        .cardBotonContactar{
+            grid-area: cardBotonContactar;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .btn{
+            font-size: 30px;
+            width: 50%;
+            height: 30%;
+            }
+        }           
+
+        .cardTarjetaResultados{
+            grid-area: cardTarjetaResultados;
+        
+
+            .card {
+                height: auto;
+                width: 100%;
+                margin-left: 3%;
+                card-body{
+                    height: auto;
+                }
+                h5{
+                    font-size: 20px;
+                    font-weight: 800;
+                    text-align: left;
+                }
+                p{
+                    font-size: 18px;
+                    margin: 0px;
+                    text-align: left;
+                }
+        
+            }
+        }    
+
+    }
+    
+
+    footer{
+        background-color: white;
+        height: 100vh;
+    }
+
+    #alertaNombre {
+        display: none;
+        color: rgb(3, 3, 3);
+        background-color: rgb(255, 241, 49);
+        font-weight: 600;
+        font-size: 13px;
+        text-align: left;
+    }
+    #alertaCorreo {
+        display: none;
+        color: rgb(3, 3, 3);
+        background-color: rgb(255, 241, 49);
+        font-weight: 600;
+        font-size: 13px;
+        text-align: left;
+    }
+    #alertaTelefono {
+        display: none;
+        color: rgb(3, 3, 3);
+        background-color: rgb(255, 241, 49);
+        font-weight: 600;
+        font-size: 13px;
+        text-align: left;
+    }
+
+}

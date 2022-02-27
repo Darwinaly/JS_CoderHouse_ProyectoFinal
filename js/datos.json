@@ -1,0 +1,40 @@
+[
+    {
+      "id": 0,
+      "tipo": "local",
+      "nombre": "Unidades Indexadas",
+      "value": 8
+    },
+    {
+        "id": 1,
+        "tipo": "local",
+        "nombre": "Letras de Tesoro",
+        "value": 5
+    },
+    {
+        "id": 2,
+        "tipo": "local",
+        "nombre": "Ganado",
+        "value": 10
+    },
+    {
+        "id": 3,
+        "tipo": "internacional",
+        "nombre": "Fondos de Inversion",
+        "value": 17
+    },
+    {
+        "id": 4,
+        "tipo": "internacional",
+        "nombre": "Criptomonedas",
+        "value": 5
+    },
+    {
+        "id": 5,
+        "tipo": "internacional",
+        "nombre": "Oro",
+        "value": 8
+    }
+    
+]
+
