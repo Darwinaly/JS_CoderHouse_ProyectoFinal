@@ -76,6 +76,7 @@ $("#buttonEliminar2").click(function(){
 
 $("#buttonContactar").click(function(){
     $("#contacto").slideDown(2000);
+    window.scrollTo({top: 0, behavior: 'smooth'});
 });
 
 // ==> CLIC EN CERRAR CONTACTAR
